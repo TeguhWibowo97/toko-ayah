@@ -12,20 +12,29 @@
         </div>
         <div class="modal-body">
             <label>Nama Produk : </label>
-            <input type="text" class="form-control" name="nama_produk">
+            <input type="text" class="form-control" name="nama_produk" required>
 
             <label>Stok : </label>
-            <input type="number" class="form-control" name="stok">
+            <input type="number" class="form-control" name="stok" required>
 
             <label>Harga : </label>
-            <input type="number" class="form-control" name="harga">
+            <input type="number" class="form-control" name="harga" required>
 
             <label>Kondisi : </label>
-            <input type="text" class="form-control" name="kondisi">
+            <select name="kondisi" id="" class="form-control">
+                <option value="Baru">Baru</option>
+                <option value="Second">Second</option>
+            </select>
+
+            <label>Kategori : </label>
+            <select name="kategori" id="" class="form-control">
+                <option value="Smartphone">Smartphone</option>
+                <option value="Aksesoris">Aksesoris</option>
+            </select>
 
             <label>Deskripsi Produk : </label>
-            <input type="text" class="form-control" name="deskripsi">
-
+            <textarea class="form-control" name="deskripsi" rows="5" required></textarea>
+            
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
